@@ -20,7 +20,7 @@ app.get("/pokemon", (req, res) => {
   if (foundPokemon) {
     return res.status(200).json(foundPokemon);
   }
-  return res.status(404).json({ msg: "Pokemon não encontrado" });
+  return res.status(404).json({ msg: "Pokemon not found" });
 });
 
 // -- Define your route listeners here! --
